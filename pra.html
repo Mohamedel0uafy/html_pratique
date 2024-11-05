@@ -318,6 +318,16 @@
 
   <!-- calendar -->
  <input type="date" id="" name="..." required><br><br> <!--required:darori-->
+ <br>
+
+  <!-- slider control -->
+ <p>value: <span id="newvalue">18</span></p>
+ <input type="range" id="valuevalue" min="0" max="80" value="18" step="1" oninput="show_value(value)"><br><br>
+ <script>
+  function show_value(value){
+    document.getElementById("newvalue").innerText=value;
+  }
+ </script>
 
   <!-- button submit -->
    <input type="submit" value="Submit">
@@ -331,9 +341,17 @@
 
 
 <!-- --------------------------------FIN COURSE W-school----------------------------- -->
+<!-- resume -->
 
+<!-- image map -->
+<br><br><br>
+<h2 style="text-align: center;font-family:cursive"><b>IMAGE MAP</b></h2>
+<img src="BW039964_133aad8a.jpg" alt="car" usemap="#rwidamap" width="500" height="500">
 
-
+<map name="rwidamap">
+  <!-- <area shape="rect" coords="250,20,390,160" href=""> -->
+  <area shape="rect" coords="210,315,280,451" alt="rwida" href="https://fr.e-guide.renault.com/fra/Master-3-ph1/ENJOLIVEURS" target="_blank">
+</map>
 
 
 
