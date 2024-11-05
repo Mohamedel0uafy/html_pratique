@@ -229,10 +229,99 @@
     <!-- javascriptL -->
 <script>
     function change_text() {
-        document.getElementById("text").innerHTML="hello eloufy";
-    }
+        let txt=document.getElementById("text");
+        if (txt.innerHTML==="hello abdulrahman"){
+          txt.innerHTML="hello ilwafy";
+        }else {
+          txt.innerHTML="hello m9rach";
+        }
+        }
+      
 </script>
 
+
+<!-- iframe -->
+
+<br>
+<iframe src="https://meet.google.com/" width="500px" height="500px" title="chatgpt page" ></iframe>
+
+
+
+<!-- java script -->
+<p id="demo">Hello DEV 101 and thanks you m9rach</p>
+<button onclick="change()">change??</button>
+<script>
+  function change() {
+    let text=document.getElementById("text");
+    if (text.innerHTML==="hello abdulrahman"){
+      document.getElementById("demo").style.fontSize="25px";
+    }else if (text.innerHTML==="hello ilwafy"){
+      document.getElementById("demo").style.color="red";
+    }else{
+      document.getElementById("demo").style.backgroundColor="yellow"
+    }
+     
+  }
+</script>   
+
+<br>
+<img id="hh" src="winico7.png" width="50px" height="50px">
+<button onclick="image_change()">other image</button>
+<script>
+  function image_change() {
+    let img=document.getElementById("hh");
+    img.src="200w.gif";
+    img.width=200;
+    img.height=300;
+  }
+
+</script>
+<br><br>
+
+<!-- forms -->
+  <!-- text -->
+<form action="file.php">
+ <label for="firstname">First name:</label><br>
+ <input type="text" id="firstname" name="fname" value="Entry..."><br>
+ <label for="lastname">Last name:</label><br>
+ <input type="text" id="lastnname" name="lname" placeholder="Entry..."><br>
+
+
+  <!-- radio -->
+ <br>
+ <input type="radio" id="html" name="..." value="HTML"> 
+ <label for="html">HTML</label><br> 
+ <input type="radio" id="css" name="..." value="CSS">
+ <label for="css">Css</label><br>
+ <input type="radio" id="java" name="..." value="JAVA">
+ <label for="java">JAVA</label><br>
+
+ <br>
+  <!-- checkboxes -->
+ <input type="checkbox" id="check1" name="..." value="Bike">
+ <label for="chack1">I have a bike </label><br>
+ <input type="checkbox" id="check2" name="..." value="Car">
+ <label for="chack2">I have a car</label><br>
+ <input type="checkbox" id="check3" name="..." value="Boat">
+ <label for="chack3">I have a boat</label>
+ <br>
+
+  <!-- select -->
+ <select id="choix">
+  <option value="...">14:00</option>
+  <option >16:00</option>
+  <option>18:00</option>
+ </select><br>
+
+  <!-- comment:textarea -->
+ <textarea id="comment" rows="5" cols="40" placeholder="enter your comment..."></textarea><br>
+
+  <!-- calendar -->
+ <input type="date" id="" name="..." required><br><br>
+ 
+  <!-- button submit -->
+   <input type="submit" value="Submit">
+</form>
 
 
 
